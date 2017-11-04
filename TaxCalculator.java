@@ -29,8 +29,8 @@ public class TaxCalculator{
 			System.out.printf("Enter your pay rate: ");
 			payRate = input.nextDouble();
 		}
-		System.out.printf("How much do you pay in taxes: ");
-		tax = input.nextDouble();
+		System.out.printf("What is your tax percent: ");
+		tax = input.nextDouble() / 100;
 		gross = findGross(hours, payRate);
 		netPay = tax(gross, tax);
 		System.out.printf("Here is your net pay is %.2f\n", netPay);
